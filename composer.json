@@ -1,0 +1,17 @@
+{
+    "name": "healmysoul/football-bracket",
+    "description": "Football Bracket to simulate tournament games between 32 teams",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sanakoev Anton",
+            "email": "totum42@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FB\\": "src/"
+        }
+    }
+}

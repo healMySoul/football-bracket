@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    height: 100%;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 1000px;
+}
+
+header,
+main,
+footer {
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #dedede;
+    text-align: center;
+}
+
+main {
+    background-color: #ebebeb;
+    flex: 1;
+}
+
+footer {
+    background-color: #dedede;
+}
+
+.winner-name {
+    color: #37a760;
+    font-weight: 700;
+}
+
+.rounds-wrap {
+    display: flex;
+}
+
+.round {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    width: 20%;
+}
+
+.match {
+    flex: 0;
+    margin: 10px 0;
+}
+
+.match__team {
+    background-color: #e4c2ca;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    margin: 5px 0;
+}
+
+.match__team--winner {
+    background-color: #c2e4cf;
+}
+
+.match__team-name {
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.match__team-goals {
+    border-left: 1px solid #999;
+    flex: 0 0 auto;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+}
+
+.stat {
+    background-color: #f1f1f1;
+    height: 500px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+    width: 600px;
+}
+
+.stat__row {
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+.stat__row--head {
+    background-color: #e2e2e2;
+}
+
+.stat__row--head .stat__team-feature {
+    padding: 5px;
+}
+
+.stat__row:not(:last-child) {
+    border-bottom: none;
+}
+
+.stat__team-name {
+    flex: 0 0 40%;
+    padding: 5px;
+}
+
+.stat__team-feature {
+    border-left: 1px solid #ccc;
+    flex: 0 0 30%;
+}
+
+.stat__team-feature-val {
+    background-color: #c2e4cf;
+    display: block;
+    height: 100%;
+    text-align: right;
+}
+
+.stat__team-feature-numval {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+}
